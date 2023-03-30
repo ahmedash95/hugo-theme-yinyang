@@ -59,7 +59,7 @@
   <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Bungee+Shade" rel="stylesheet">
   <!-- quicklink require -->
   <!-- <script>
-    /* Disable minification (remove `.min` from URL path) for more info 
+    /* Disable minification (remove `.min` from URL path) for more info
     https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver
     */
     (function (undefined) { }).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
@@ -67,4 +67,6 @@
 
   {{ if .Site.Params.TwitterCards }}{{ template "_internal/twitter_cards.html" . }}{{ end }}
   {{ .Site.Params.extraHead | safeHTML }}
+
+  <script defer data-domain="/ahmedash95.github.io" src="https://plausible.io/js/script.js"></script>
 </head>

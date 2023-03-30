@@ -34,6 +34,12 @@
         <div class="post-content markdown-body">
           {{ .Site.Params.postHeaderContent | safeHTML }}
           {{ .Content }}
+          {{ if .Params.series }}
+            <div id="post-content">
+              {{ .Content }}
+              {{ partial "series_link.html" . }}
+          </div>
+          {{ end }}
         </div>
 
         <div class="row middle-xs">
